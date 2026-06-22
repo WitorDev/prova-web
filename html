@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Copa do Mundo 2026</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sede">Países-sede</a>
+            <a href="#grupos">Grupos</a>
+            <a href="#curiosidades">Curiosidades</a>
+            <a href="#formulario">Cadastro</a> 
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h1>Copa do Mundo 2026</h1>
+            <img src="copa.jpeg" alt="Logotipo Oficial da Copa do Mundo 2026">
+        </section>
+
+        <section id="sede">
+            <h2 class="section-title">Países-Sede</h2>
+            <div class="cards-container">
+                <div class="card" id="card-usa">
+                    <div class="card-flag">🇺🇸</div>
+                    <h3>Estados Unidos</h3>
+                    <p><strong>Cidades-sede:</strong> 11 cidades</p>
+                    <p>Receberá a maior parte das partidas nesta edição histórica, incluindo a grande final.</p>
+                </div>
+                
+                <div class="card" id="card-canada">
+                    <div class="card-flag">🇨🇦</div>
+                    <h3>Canadá</h3>
+                    <p><strong>Cidades-sede:</strong> Toronto e Vancouver</p>
+                    <p>Estreia como coorganizador do torneio masculino após o Mundial Feminino de 2015.</p>
+                </div>
+
+                <div class="card" id="card-mexico">
+                    <div class="card-flag">🇲🇽</div>
+                    <h3>México</h3>
+                    <p><strong>Cidades-sede:</strong> 3 cidades</p>
+                    <p>Torna-se o primeiro país a sediar três Copas do Mundo (1970, 1986 e 2026).</p>
+                </div>
+            </div>
+
+            <p style="display: flex; justify-content: center; width: 100%;">Clique para ver qual o campeão mais adorado pelo público</p>
+            <br>
+            <div class="interactive-box">
+                <button id="btn-favorito">Destacar Campeão Favorito</button>
+            </div>
+
+            <h2 class="section-title">Simulação do Grupo C</h2>
+            <table class="tabela-selecoes">
+                <thead>
+                    <tr>
+                        <th>Seleção</th>
+                        <th>Continente</th>
+                        <th>Pontos</th>
+                        <th>Situação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Brasil</td>
+                        <td>América do Sul</td>
+                        <td>4</td>
+                        <td>Primeiro do grupo</td>
+                    </tr>
+                    <tr>
+                        <td>Marrocos</td>
+                        <td>África</td>
+                        <td>4</td>
+                        <td>Segundo do grupo</td>
+                    </tr>
+                    <tr>
+                        <td>Escócia</td>
+                        <td>Europa</td>
+                        <td>3</td>
+                        <td>Terceiro do grupo</td>
+                    </tr>
+                    <tr>
+                        <td>Haiti</td>
+                        <td>América Central</td>
+                        <td>0</td>
+                        <td>Quarto do grupo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="grupos">
+            <h2 class="section-title">Grupos da Copa do Mundo 2026</h2>
+            <div class="interactive-box">
+                <button id="btn-mostrar-selecoes">Mostrar Seleções do Grupo</button>
+                <div id="lista-selecoes-container"></div>
+            </div>
+
+            <div class="grupos-grid">
+                <div class="grupo-card">
+                    <h3>Grupo A</h3>
+                    <ul>
+                        <li>México</li>
+                        <li>África do Sul</li>
+                        <li>Coreia do Sul</li>
+                        <li>República Tcheca</li>
+                    </ul>
+                </div>
+                <div class="grupo-card">
+                    <h3>Grupo B</h3>
+                    <ul>
+                        <li>Canadá</li>
+                        <li>Bósnia e Herzegovina</li>
+                        <li>Catar</li>
+                        <li>Suíça</li>
+                    </ul>
+                </div>
+                <div class="grupo-card">
+                    <h3>Grupo C</h3>
+                    <ul>
+                        <li>Brasil</li>
+                        <li>Marrocos</li>
+                        <li>Haiti</li>
+                        <li>Escócia</li>
+                    </ul>
+                </div>
+                <div class="grupo-card">
+                    <h3>Grupo D</h3>
+                    <ul>
+                        <li>Estados Unidos</li>
+                        <li>Paraguai</li>
+                        <li>Austrália</li>
+                        <li>Turquia</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="curiosidades">
+            <h2 class="section-title">Curiosidades do Torneio</h2>
+            <ol class="lista-curiosidades">
+                <li>Será a primeira edição com 48 seleções participantes.</li>
+                <li>O torneio terá um recorde de 104 partidas disputadas.</li>
+                <li>Três países dividem a organização pela primeira vez na história.</li>
+                <li>O México será o único país a sediar o torneio em três edições diferentes.</li>
+                <li>A distância máxima entre as cidades sedes ultrapassa 4.000 quilômetros.</li>
+            </ol>
+        </section>
+
+        <section id="container-formulario">
+            <div id="formulario">
+                <h2>Cadastro do Torcedor</h2>
+                <form id="form-cadastro">
+                    <div class="input-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <button type="submit">Enviar Cadastro</button>
+                </form>
+                <p id="msg-sucesso" class="hidden-msg">Cadastro realizado com sucesso!</p>
+            </div>
+
+            <div id="calculadora-pontos">
+                <h2>Calculadora de Pontos</h2>
+                <div class="input-group">
+                    <label for="vitorias">Vitórias</label>
+                    <input type="number" id="vitorias" min="0" value="0">
+                </div>
+                <div class="input-group">
+                    <label for="empates">Empates</label>
+                    <input type="number" id="empates" min="0" value="0">
+                </div>
+                <button id="btn-calcular">Calcular Pontuação</button>
+                <p id="resultado-pontos"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Copa do Mundo - Página Informativa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
